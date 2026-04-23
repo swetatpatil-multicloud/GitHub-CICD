@@ -1,8 +1,8 @@
 # GitHub-CICD
 
-# 🚀 Flask CI/CD Pipeline using GitHub Actions
+# Flask CI/CD Pipeline using GitHub Actions
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates the implementation of a **CI/CD (Continuous Integration and Continuous Deployment) pipeline** for a Python Flask application using GitHub Actions.
 
@@ -15,7 +15,7 @@ The pipeline automates:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python 3.10
 * Flask
@@ -24,7 +24,7 @@ The pipeline automates:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -38,7 +38,7 @@ The pipeline automates:
 
 ---
 
-## ⚙️ CI/CD Workflow Explanation
+## CI/CD Workflow Explanation
 
 The pipeline is defined in:
 
@@ -46,7 +46,7 @@ The pipeline is defined in:
 .github/workflows/ci-cd.yml
 ```
 
-### 🔄 Workflow Triggers
+### Workflow Triggers
 
 | Event             | Action                      |
 | ----------------- | --------------------------- |
@@ -56,34 +56,34 @@ The pipeline is defined in:
 
 ---
 
-## 🔁 Workflow Stages
+## Workflow Stages
 
-### 1️⃣ Install Dependencies
+### Install Dependencies
 
 * Installs required Python packages using `pip`
 
-### 2️⃣ Run Tests
+### Run Tests
 
 * Executes test cases using `pytest`
 * Ensures code quality before deployment
 
-### 3️⃣ Build 
+### Build 
 
 * Prepares the application after successful tests
 
-### 4️⃣ Deploy to Staging
+### Deploy to Staging
 
 * Triggered when code is pushed to `staging` branch
 * Simulates deployment to staging server
 
-### 5️⃣ Deploy to Production
+### Deploy to Production
 
 * Triggered when a release tag (e.g., `v1.0`) is created
 * Simulates production deployment
 
 ---
 
-## 🔐 Environment Secrets
+## Environment Secrets
 
 The following secrets are configured in repository settings:
 
@@ -96,9 +96,9 @@ The following secrets are configured in repository settings:
 
 ---
 
-## 🚀 How to Run the Pipeline
+## How to Run the Pipeline
 
-### ✅ Trigger CI (Main Branch)
+### Trigger CI (Main Branch)
 
 1. Make a change in `main`
 2. Commit changes
@@ -106,7 +106,7 @@ The following secrets are configured in repository settings:
 
 ---
 
-### 🧪 Trigger Staging Deployment
+### Trigger Staging Deployment
 
 1. Switch to `staging` branch
 2. Make a small code change
@@ -115,7 +115,7 @@ The following secrets are configured in repository settings:
 
 ---
 
-### 🌍 Trigger Production Deployment
+### Trigger Production Deployment
 
 1. Go to **Releases**
 2. Click **Create new release**
@@ -125,23 +125,33 @@ The following secrets are configured in repository settings:
 
 ---
 
-## 📸 Screenshots
+### Successful CI Pipeline
 
-### ✅ Successful CI Pipeline
+<img width="940" height="322" alt="image" src="https://github.com/user-attachments/assets/fa38f096-031c-4501-835f-5cf96a79a230" />
 
-*(Add screenshot here)*
+### Staging Deployment
 
-### 🧪 Staging Deployment
+<img width="940" height="318" alt="image" src="https://github.com/user-attachments/assets/be1b3d12-da4a-49b2-8033-18bebdb84f6f" />
 
-*(Add screenshot here)*
+<img width="940" height="322" alt="image" src="https://github.com/user-attachments/assets/7ec0a8e1-71af-4411-928a-d14d5c2ad094" />
 
-### 🌍 Production Deployment
+<img width="940" height="399" alt="image" src="https://github.com/user-attachments/assets/75f03a33-b230-4be8-97f4-1df0cedddf1c" />
 
-*(Add screenshot here)*
+<img width="619" height="849" alt="image" src="https://github.com/user-attachments/assets/65fbc03a-3acd-473b-8d26-6e62ea9426a1" />
 
----
+<img width="672" height="558" alt="image" src="https://github.com/user-attachments/assets/4e4211f3-6406-42df-bcd1-051aab18ce74" />
 
-## 🎯 Key Learning Outcomes
+
+### Production Deployment
+
+<img width="940" height="411" alt="image" src="https://github.com/user-attachments/assets/e348ea58-57b6-4636-9cbf-52b15446f0a0" />
+
+<img width="940" height="394" alt="image" src="https://github.com/user-attachments/assets/a076be89-9f6a-42e4-8c4c-c9f8f1b7c551" />
+
+<img width="940" height="412" alt="image" src="https://github.com/user-attachments/assets/90a704f1-0a38-4483-9663-413c5f8440d9" />
+
+
+## Key Learning Outcomes
 
 * Understanding CI/CD concepts
 * Automating workflows using GitHub Actions
@@ -149,10 +159,6 @@ The following secrets are configured in repository settings:
 * Managing branches (`main` and `staging`)
 * Using GitHub Secrets for secure deployments
 
-
-
----
-
-## 👨‍💻 Author
+## Author
 
 * Your Name : Sweta Patil
