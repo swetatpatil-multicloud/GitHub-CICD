@@ -26,25 +26,12 @@ The pipeline automates:
 
 ## Project Structure
 
-```
-.
-├── .github/workflows/
-│   └── ci-cd.yml        # CI/CD pipeline configuration
-├── app.py               # Flask application
-├── test_app.py          # Test cases using pytest
-├── requirements.txt     # Project dependencies
-├── README.md            # Project documentation
-```
+<img width="671" height="236" alt="image" src="https://github.com/user-attachments/assets/f3d6174f-8a8c-430d-80d4-79fc61120342" />
 
----
 
 ## CI/CD Workflow Explanation
 
 The pipeline is defined in:
-
-```
-.github/workflows/ci-cd.yml
-```
 
 ### Workflow Triggers
 
@@ -54,7 +41,10 @@ The pipeline is defined in:
 | Push to `staging` | Runs CI + deploy to staging |
 | Release creation  | Deploy to production        |
 
----
+## CI/CD Workflow Explanation
+
+<img width="704" height="233" alt="image" src="https://github.com/user-attachments/assets/f5328c66-d42c-48ec-a24b-f9a728a5dbac" />
+
 
 ## Workflow Stages
 
