@@ -1,6 +1,6 @@
-# Viva questions for this project:
+####### Viva questions for this project:
 
-## 1. What is CI/CD?
+### 1. What is CI/CD?
 
 Answer:
 CI/CD stands for Continuous Integration and Continuous Deployment.
@@ -10,7 +10,7 @@ CD → Automatically deploys the application after successful testing
 
 It helps in faster and reliable software delivery.
 
-2. What is GitHub Actions?
+### 2. What is GitHub Actions?
 
 Answer:
 GitHub Actions is a tool provided by GitHub to automate workflows such as:
@@ -21,7 +21,7 @@ Deploying applications
 
 It uses YAML files to define automation steps.
 
-3. What is a workflow in GitHub Actions?
+### 3. What is a workflow in GitHub Actions?
 
 Answer:
 A workflow is an automated process defined in a YAML file inside:
@@ -32,20 +32,20 @@ Jobs
 Steps
 Triggers
 
-4. What are jobs and steps?
+### 4. What are jobs and steps?
 
 Answer:
 Job → A group of tasks executed on a runner (e.g., build, deploy)
 Step → Individual commands inside a job
 
-5. What is a runner?
+### 5. What is a runner?
 
 Answer:
 A runner is a virtual machine that executes your workflow.
 Example:
 runs-on: ubuntu-latest
 
-6. What does your project do?
+### 6. What does your project do?
 
 Answer:
 It implements a CI/CD pipeline for a Flask application that:
@@ -53,7 +53,7 @@ Installs dependencies
 Runs tests using pytest
 Deploys to staging and production environments automatically
 
-7. What triggers your pipeline?
+### 7. What triggers your pipeline?
 
 Answer:
 The pipeline is triggered by:
@@ -61,27 +61,27 @@ Push to main branch → CI
 Push to staging branch → CI + staging deployment
 Release creation → production deployment
 
-8. Why did you use two branches (main and staging)?
+### 8. Why did you use two branches (main and staging)?
 
 Answer:
 main → Production-ready code
 staging → Testing environment before production
 This helps ensure safe deployment.
 
-9. What happens when you push code to staging?
+### 9. What happens when you push code to staging?
 
 Answer:
 Dependencies are installed
 Tests are executed
 If tests pass → application is deployed to staging
 
-10. What happens when you create a release?
+### 10. What happens when you create a release?
 
 Answer:
 Pipeline runs again
 If successful → application is deployed to production
 
-11. What are GitHub Secrets?
+### 11. What are GitHub Secrets?
 
 Answer:
 GitHub Secrets are used to store sensitive data securely, such as:
@@ -89,7 +89,7 @@ API keys
 Deployment credentials
 They are not visible in code.
 
-12. Did you use secrets in your project?
+### 12. Did you use secrets in your project?
 
 Answer:
 Yes, I configured:
@@ -98,7 +98,7 @@ STAGING_KEY
 PROD_KEY
 These simulate deployment credentials.
 
-13. Why do we use requirements.txt?
+### 13. Why do we use requirements.txt?
 
 Answer:
 It lists all dependencies required for the project.
@@ -106,14 +106,14 @@ Example:
 flask
 pytest
 
-14. What is the role of pytest?
+### 14. What is the role of pytest?
 
 Answer:
 Pytest is used to:
 Write test cases
 Validate application functionality
 
-15. What does this test do?
+### 15. What does this test do?
 response = client.get('/')
 assert response.status_code == 200
 
@@ -122,7 +122,7 @@ It checks whether:
 The home route / is working
 The server returns a successful response (200)
 
-16. Why did your pipeline fail earlier?
+### 16. Why did your pipeline fail earlier?
 
 Answer:
 Because of an error in Flask initialization:
@@ -135,28 +135,28 @@ Flask(__name__)
 
 This caused a NameError.
 
-17. Is your deployment real?
+### 17. Is your deployment real?
 
 Answer:
 No, it is a simulated deployment using echo commands.
 Example:
 echo "Deploying to Staging Server..."
 
-18. How can you make it real?
+### 18. How can you make it real?
 
 Answer:
 By integrating with platforms like:
 Render
 Heroku
 
-19. What is the purpose of CI/CD?
+### 19. What is the purpose of CI/CD?
 
 Answer:
 Automate development process
 Reduce manual errors
 Ensure faster delivery
 
-20. What did you learn from this project?
+### 20. What did you learn from this project?
 
 Answer:
 Creating CI/CD pipelines
@@ -165,13 +165,13 @@ Writing tests
 Handling errors in pipelines
 Working with branches and deployments
 
-21. Difference between CI and CD?
+### 21. Difference between CI and CD?
 
 Answer:
 CI	CD
 Testing & building	Deployment
 Happens first	Happens after CI
 
-22. What is YAML?
+### 22. What is YAML?
 Answer:
 YAML is a configuration language used to define workflows in GitHub Actions.
